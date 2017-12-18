@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import entidade.Administrador;
+import entidade.Caixa;
 
 public class AdministradorDAO extends ConnectionDAO{
 	private Connection conn = null;
@@ -40,6 +41,70 @@ public class AdministradorDAO extends ConnectionDAO{
 			if (stmt != null)
 				stmt.close();
 
+		}
+	}
+	public void busca (Caixa a) throws SQLException {
+		PreparedStatement stmt = null;
+		try {
+			stmt = conn.prepareStatement("select from usuario where matricula = ?)");
+	
+			stmt.setInt(1, a.getMatricula());
+			
+			
+			int flag = stmt.executeUpdate();
+			
+			if(flag == 0)
+				throw new SQLException("Erro ao buscar no banco");
+			
+		} 
+		finally {
+			if (conn != null)
+				conn.close();
+			if (stmt != null)
+				stmt.close();
+		}
+	}
+	public void delete (Caixa a) throws SQLException {
+		PreparedStatement stmt = null;
+		try {
+			stmt = conn.prepareStatement("delete from usuario where matricula = ?");
+		
+			stmt.setInt(1, a.getMatricula());
+			
+			int flag = stmt.executeUpdate();
+			
+			if(flag == 0)
+				throw new SQLException("Erro ao deletar no banco");
+			
+		} 
+		finally {
+			if (conn != null)
+				conn.close();
+			if (stmt != null)
+				stmt.close();
+		}
+	}
+	public void atualizar (Caixa a) throws SQLException {
+		PreparedStatement stmt = null;
+		try {
+			stmt = conn.prepareStatement("update usuario set matricula = ?, nome = ? where senha = ? cargo = ?");
+		
+			stmt.setInt(1, a.getMatricula());
+			stmt.setString(2, a.getNome());
+			stmt.setInt(3, a.getSenha());
+			stmt.setString(4, a.getCargo());
+			
+			int flag = stmt.executeUpdate();
+			
+			if(flag == 0)
+				throw new SQLException("Erro ao deletar no banco");
+			
+		} 
+		finally {
+			if (conn != null)
+				conn.close();
+			if (stmt != null)
+				stmt.close();
 		}
 	}
 }

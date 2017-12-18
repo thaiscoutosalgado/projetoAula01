@@ -46,13 +46,13 @@ public class CaixaDAO extends ConnectionDAO{
 			try {
 				stmt = conn.prepareStatement("select from usuario where matricula = ?)");
 		
-				stmt.setInt(2, a.getMatricula());
+				stmt.setInt(1, a.getMatricula());
 				
 				
 				int flag = stmt.executeUpdate();
 				
 				if(flag == 0)
-					throw new SQLException("Erro ao gravar no banco");
+					throw new SQLException("Erro ao buscar no banco");
 				
 			} 
 			finally {
@@ -63,5 +63,48 @@ public class CaixaDAO extends ConnectionDAO{
 			}
 		}
 		
+		public void delete (Caixa a) throws SQLException {
+			PreparedStatement stmt = null;
+			try {
+				stmt = conn.prepareStatement("delete from usuario where matricula = ?");
+			
+				stmt.setInt(1, a.getMatricula());
+				
+				int flag = stmt.executeUpdate();
+				
+				if(flag == 0)
+					throw new SQLException("Erro ao deletar no banco");
+				
+			} 
+			finally {
+				if (conn != null)
+					conn.close();
+				if (stmt != null)
+					stmt.close();
+			}
+		}
+		public void atualizar (Caixa a) throws SQLException {
+			PreparedStatement stmt = null;
+			try {
+				stmt = conn.prepareStatement("update usuario set matricula = ?, nome = ? where senha = ? cargo = ?");
+			
+				stmt.setInt(1, a.getMatricula());
+				stmt.setString(2, a.getNome());
+				stmt.setInt(3, a.getSenha());
+				stmt.setString(4, a.getCargo());
+				
+				int flag = stmt.executeUpdate();
+				
+				if(flag == 0)
+					throw new SQLException("Erro ao deletar no banco");
+				
+			} 
+			finally {
+				if (conn != null)
+					conn.close();
+				if (stmt != null)
+					stmt.close();
+			}
+		}
 		
 }
