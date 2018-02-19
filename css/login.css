@@ -1,0 +1,317 @@
+body {
+    background-color: #CCC;
+    background-image: url('https://unsplash.it/g/1600/2500?random');
+    color: #FFF;
+}
+.viewer{
+background-color: #101010;"
+ transition: background-color 0.5s ease;
+ opacity: 0.8;
+}
+
+.view{
+background-color: #101010;"
+ transition: background-color 0.5s ease;
+ opacity: 0.8;
+}
+
+.view:hover {
+  background-color: #262626;
+}
+
+.product {
+color: white;
+font-size: 1.0em;
+
+}
+
+.product:hover {
+  text-decoration: none;
+  color: orange;
+}
+
+.logotipo img {
+height: 30px;
+
+}
+
+.logotipo {
+padding: 10px;
+margin-right: 20px;
+
+}
+
+.section-grey {
+    background: #101010;
+    opacity: 0.8;
+}
+
+.perfil {
+  padding: 10px;
+
+}
+
+.perfil li:first-child {
+   font-size: 1.3em;
+   font-weight: bold;
+   margin-bottom: 2px;
+   width: 300px;
+}
+
+.vote label {
+    cursor:pointer;
+}
+.vote label input{
+    display:none;
+}
+.vote label i {
+    font-family:FontAwesome;
+    font-size:18px;
+    -webkit-transition-property:color, text;
+    -webkit-transition-duration: .2s, .2s;
+    -webkit-transition-timing-function: linear, ease-in;
+    -moz-transition-property:color, text;
+    -moz-transition-duration:.2s;
+    -moz-transition-timing-function: linear, ease-in;
+    -o-transition-property:color, text;
+    -o-transition-duration:.2s;
+    -o-transition-timing-function: linear, ease-in;
+}
+.vote label i:before {
+    content:'\f005';
+}
+.vote label i.active {
+    color:gold;
+}
+
+.vote label {
+    cursor:pointer;
+}
+.vote label input{
+    display:none;
+}
+.vote1 label i {
+    font-family:FontAwesome;
+    font-size:18px;
+    -webkit-transition-property:color, text;
+    -webkit-transition-duration: .2s, .2s;
+    -webkit-transition-timing-function: linear, ease-in;
+    -moz-transition-property:color, text;
+    -moz-transition-duration:.2s;
+    -moz-transition-timing-function: linear, ease-in;
+    -o-transition-property:color, text;
+    -o-transition-duration:.2s;
+    -o-transition-timing-function: linear, ease-in;
+}
+.vote1 label i:before {
+    content:'\f005';
+}
+.vote1 label i.active {
+    color:gold;
+}
+.vote1 label {
+    cursor:pointer;
+}
+.vote1 label input{
+    display:none;
+}
+
+.vote2 label i {
+    font-family:FontAwesome;
+    font-size:18px;
+    -webkit-transition-property:color, text;
+    -webkit-transition-duration: .2s, .2s;
+    -webkit-transition-timing-function: linear, ease-in;
+    -moz-transition-property:color, text;
+    -moz-transition-duration:.2s;
+    -moz-transition-timing-function: linear, ease-in;
+    -o-transition-property:color, text;
+    -o-transition-duration:.2s;
+    -o-transition-timing-function: linear, ease-in;
+}
+.vote2 label i:before {
+    content:'\f005';
+}
+.vote2 label i.active {
+    color:gold;
+}
+.vote2 label {
+    cursor:pointer;
+}
+.vote2 label input{
+    display:none;   
+
+}
+
+.vote3 label i {
+    font-family:FontAwesome;
+    font-size:18px;
+    -webkit-transition-property:color, text;
+    -webkit-transition-duration: .2s, .2s;
+    -webkit-transition-timing-function: linear, ease-in;
+    -moz-transition-property:color, text;
+    -moz-transition-duration:.2s;
+    -moz-transition-timing-function: linear, ease-in;
+    -o-transition-property:color, text;
+    -o-transition-duration:.2s;
+    -o-transition-timing-function: linear, ease-in;
+}
+.vote3 label i:before {
+    content:'\f005';
+}
+.vote3 label i.active {
+    color:gold;
+}
+.vote3 label {
+    cursor:pointer;
+}
+.vote3 label input{
+    display:none;       
+}
+.vote4 label i {
+    font-family:FontAwesome;
+    font-size:18px;
+    -webkit-transition-property:color, text;
+    -webkit-transition-duration: .2s, .2s;
+    -webkit-transition-timing-function: linear, ease-in;
+    -moz-transition-property:color, text;
+    -moz-transition-duration:.2s;
+    -moz-transition-timing-function: linear, ease-in;
+    -o-transition-property:color, text;
+    -o-transition-duration:.2s;
+    -o-transition-timing-function: linear, ease-in;
+}
+.vote4 label i:before {
+    content:'\f005';
+}
+.vote4 label i.active {
+    color:gold;
+}
+.vote4 label {
+    cursor:pointer;
+}
+.vote4 label input{
+    display:none; 
+  }    
+  .vote5 label i {
+    font-family:FontAwesome;
+    font-size:18px;
+    -webkit-transition-property:color, text;
+    -webkit-transition-duration: .2s, .2s;
+    -webkit-transition-timing-function: linear, ease-in;
+    -moz-transition-property:color, text;
+    -moz-transition-duration:.2s;
+    -moz-transition-timing-function: linear, ease-in;
+    -o-transition-property:color, text;
+    -o-transition-duration:.2s;
+    -o-transition-timing-function: linear, ease-in;
+}
+.vote5 label i:before {
+    content:'\f005';
+}
+.vote5 label i.active {
+    color:gold;
+}
+.vote5 label {
+    cursor:pointer;
+}
+.vote5 label input{
+    display:none;   
+  }
+  .vote6 label i {
+    font-family:FontAwesome;
+    font-size:18px;
+    -webkit-transition-property:color, text;
+    -webkit-transition-duration: .2s, .2s;
+    -webkit-transition-timing-function: linear, ease-in;
+    -moz-transition-property:color, text;
+    -moz-transition-duration:.2s;
+    -moz-transition-timing-function: linear, ease-in;
+    -o-transition-property:color, text;
+    -o-transition-duration:.2s;
+    -o-transition-timing-function: linear, ease-in;
+}
+.vote6 label i:before {
+    content:'\f005';
+}
+.vote6 label i.active {
+    color:gold;
+}
+.vote6 label {
+    cursor:pointer;
+}
+.vote6 label input{
+    display:none;   
+  }
+
+  .vote7 label i {
+    font-family:FontAwesome;
+    font-size:18px;
+    -webkit-transition-property:color, text;
+    -webkit-transition-duration: .2s, .2s;
+    -webkit-transition-timing-function: linear, ease-in;
+    -moz-transition-property:color, text;
+    -moz-transition-duration:.2s;
+    -moz-transition-timing-function: linear, ease-in;
+    -o-transition-property:color, text;
+    -o-transition-duration:.2s;
+    -o-transition-timing-function: linear, ease-in;
+}
+.vote7 label i:before {
+    content:'\f005';
+}
+.vote7 label i.active {
+    color:gold;
+}
+.vote7 label {
+    cursor:pointer;
+}
+.vote7 label input{
+    display:none;   
+  }
+
+  .vote8 label i {
+    font-family:FontAwesome;
+    font-size:18px;
+    -webkit-transition-property:color, text;
+    -webkit-transition-duration: .2s, .2s;
+    -webkit-transition-timing-function: linear, ease-in;
+    -moz-transition-property:color, text;
+    -moz-transition-duration:.2s;
+    -moz-transition-timing-function: linear, ease-in;
+    -o-transition-property:color, text;
+    -o-transition-duration:.2s;
+    -o-transition-timing-function: linear, ease-in;
+}
+.vote8  label i:before {
+    content:'\f005';
+}
+.vote8 label i.active {
+    color:gold;
+}
+.vote8  label {
+    cursor:pointer;
+}
+.vote8  label input{
+    display:none;   
+  }
+
+@media (max-width: 767px) {
+   .perfil {
+      color: #FFF;
+   }
+
+.perfil a {
+
+	color: #9d9d9d;
+	display:block;
+	padding: 5px 0;
+ }
+
+ .perfil a:hover {
+     text-decoration: none;
+     color: #FFF;
+
+ }
+}
+

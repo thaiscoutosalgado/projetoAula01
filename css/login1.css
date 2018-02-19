@@ -1,0 +1,91 @@
+body {
+    background-color: #CCC;
+    background-image: url('https://unsplash.it/g/1600/2500?random');
+    color: #FFF;
+}
+.viewer{
+background-color: #101010;"
+ transition: background-color 0.5s ease;
+}
+
+.view{
+background-color: #101010;"
+ transition: background-color 0.5s ease;
+}
+
+.view:hover {
+  background-color: #262626;
+}
+
+.product {
+color: white;
+font-size: 1.0em;
+
+}
+
+.product:hover {
+  text-decoration: none;
+  color: orange;
+}
+
+.logotipo img {
+height: 30px;
+
+}
+
+.logotipo {
+padding: 10px;
+margin-right: 20px;
+
+}
+
+.section-grey {
+    background: #101010;
+    
+}
+
+.perfil {
+  padding: 10px;
+
+}
+
+.perfil li:first-child {
+   font-size: 1.3em;
+   font-weight: bold;
+   margin-bottom: 2px;
+   width: 300px;
+}
+
+.input-checkbox>label {
+    color: #FFF;
+}
+
+.shopping-cart-table>thead>tr>th {
+    color: #FFF;
+    text-transform: uppercase;
+    border-bottom: 1px solid #DADADA;
+}
+
+@media (max-width: 767px) {
+   .perfil {
+      color: #FFF;
+   }
+
+   strong {
+    color: #FFF;
+}
+
+.perfil a {
+
+	color: #9d9d9d;
+	display:block;
+	padding: 5px 0;
+ }
+
+ .perfil a:hover {
+     text-decoration: none;
+     color: #FFF;
+
+ }
+}
+
